@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#212121"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/applogo"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="@string/SELECT_USER"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/userType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:id="@+id/admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ADMIN"
+            android:checked="true"
+
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+        <RadioButton
+            android:id="@+id/maintenanceofficer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/MAINTENANCE_OFFICER"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+        <RadioButton
+            android:id="@+id/resident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RESIDENT"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        style="@style/ButtonStyle"
+        android:layout_margin="10dp"
+        android:onClick="selectUser"
+        android:text="@string/NEXT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/button_selector"-->
+        <!--android:onClick="selectUser"-->
+        <!--android:text="@string/NEXT"-->
+        <!--android:textSize="22sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_margin="30dp"-->
+
+        <!--/>-->
+</LinearLayout>
+</ScrollView>

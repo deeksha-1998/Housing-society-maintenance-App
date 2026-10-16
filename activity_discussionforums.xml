@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/background">
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/DISCUSSION_FORUMS"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_marginTop="50dp"
+        android:onClick="createNewTopic"
+        android:text="@string/CREATE_NEW_TOPIC" />
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_marginTop="30dp"
+        android:onClick="takePart"
+        android:text="@string/TAKE_PART_IN_DISCUSSIONS" />
+
+</LinearLayout>

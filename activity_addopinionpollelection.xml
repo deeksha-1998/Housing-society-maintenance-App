@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/background">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/ADD_OPINION_POLL_ELECTION"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/title"
+        style="@style/EditTextStyle"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/ENTER_ELECTION_TITLE"
+        android:inputType="text" />
+
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+    <EditText
+        android:id="@+id/description"
+        style="@style/EditTextStyle"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/ENTER_DESCRIPTION"
+        android:inputType="text" />
+
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+    <EditText
+        android:id="@+id/question"
+        style="@style/EditTextStyle"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/ENTER_OPINION_POLL_QUESTION"
+        android:inputType="text" />
+
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+    <EditText
+        android:id="@+id/option1"
+        style="@style/EditTextStyle"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/ENTER_OPTION1"
+        android:inputType="text" />
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+    <EditText
+        android:id="@+id/option2"
+        style="@style/EditTextStyle"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/ENTER_OPTION2"
+        android:inputType="text" />
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="322dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/SELECT_DATE"
+        android:onClick="selectDate"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textSize="18sp" />
+
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+
+
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_marginTop="20dp"
+        android:onClick="addElection"
+        android:text="@string/ADD" />
+
+
+</LinearLayout>
+
+
